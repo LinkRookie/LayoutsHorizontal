@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <!-- linear layout for textView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" horizontal Scroll View Example"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/purple_700"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <!-- Horizontal scrollView  -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp">
+
+        <!-- using linear layout to store multiple view
+             inside a Horizontal Scroll View -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <!-- multiple button views to show a
+                  scrollable horizontal list -->
+            <Button
+                android:id="@+id/C"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:text="GeeksforGeeks"
+                android:padding="4dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/Co"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:padding="4dp"
+                android:text="GeeksforGeeks"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/L"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:padding="4dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:text="GeeksforGeeks"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/Ha"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:padding="4dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:text="GeeksforGeeks"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/Hah"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:padding="4dp"
+                android:backgroundTint="@color/white"
+                android:layout_margin="10dp"
+                android:text="GeeksforGeeks"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/ge"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:padding="4dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:text="GeeksforGeeks"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
